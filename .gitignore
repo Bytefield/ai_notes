@@ -1,4 +1,5 @@
-/backend/.venv
 /frontend/node_modules
+**/.venv
+**/.vscode
 **/__pycache__/*
 *.pyc
