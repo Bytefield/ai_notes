@@ -24,12 +24,12 @@ services:
     ports:
       - "8002:8002"
     environment:
-      - OPENAI_API_KEY=your_openai_api_key
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
 
   nginx:
     build: ./nginx
     ports:
-      - "80:80"
+      - "8080:80"
     depends_on:
       - frontend
       - api-gateway
